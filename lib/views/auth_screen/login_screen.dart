@@ -1,8 +1,10 @@
 import 'package:Indi_seller/const/colors.dart';
 import 'package:Indi_seller/const/const.dart';
+import 'package:Indi_seller/views/home_screen/home.dart';
 import 'package:Indi_seller/views/widgets/our_button.dart';
 import 'package:Indi_seller/views/widgets/text_style.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import '../../const/strings.dart';
 
@@ -60,7 +62,9 @@ class LoginScreen extends StatelessWidget {
                     width: context.screenWidth - 100,
                     child: ourButton(
                       title: login,
-                      onPress: (){},
+                      onPress: (){
+                        Get.to(()=>const Home());
+                      },
                     ),
                   )
                 ],
