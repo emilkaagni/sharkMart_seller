@@ -1,4 +1,5 @@
 import 'package:Indi_seller/const/const.dart';
+import 'package:Indi_seller/views/messages_screen/components/chat_bubble.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -27,7 +28,7 @@ class ChatScreen extends StatelessWidget {
                 child: ListView.builder(
                   itemCount: 20,
                     itemBuilder: ((context, index){
-                      return Container();
+                      return chatBubble();
                     }),
                 ),
             ),
