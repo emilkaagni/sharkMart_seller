@@ -2,6 +2,7 @@ import 'package:Indi_seller/const/colors.dart';
 import 'package:Indi_seller/const/const.dart';
 import 'package:Indi_seller/const/strings.dart';
 import 'package:Indi_seller/const/strings.dart';
+import 'package:Indi_seller/views/profile_screen/edit_profilescreen.dart';
 import 'package:Indi_seller/views/widgets/text_style.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -17,9 +18,12 @@ class ProfileScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: purpleColor,
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         title: boldText(text: settings, size: 16.0),
         actions: [
-          IconButton(onPressed: (){}, icon:const Icon(Icons.edit)),
+          IconButton(onPressed: (){
+            Get.to(()=>const EditProfileScreen());
+          }, icon:const Icon(Icons.edit)),
           TextButton(onPressed: (){}, child: normalText(text: logout))
 
         ],
