@@ -1,4 +1,5 @@
 import 'package:Indi_seller/const/const.dart';
+import 'package:Indi_seller/views/widgets/appbar_widget.dart';
 import 'package:Indi_seller/views/widgets/dashboard_button.dart';
 import 'package:Indi_seller/views/widgets/text_style.dart';
 import 'package:flutter/cupertino.dart';
@@ -12,14 +13,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        automaticallyImplyLeading: false,
-        title: boldText(text: dashboard, color: fontGrey, size: 16.0),
-        actions: [
-          Center(child: normalText(text: intl.DateFormat('EEE, MMM d,''y').format(DateTime.now()), color: purpleColor)),
-          10.heightBox,
-        ],
-      ),
+      appBar: appbarWidget(dashboard),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Column(
