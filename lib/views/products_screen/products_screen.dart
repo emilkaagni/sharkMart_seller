@@ -1,4 +1,5 @@
 import 'package:Indi_seller/const/const.dart';
+import 'package:Indi_seller/views/products_screen/add_product.dart';
 import 'package:Indi_seller/views/products_screen/product_details.dart';
 import 'package:Indi_seller/views/widgets/appbar_widget.dart';
 import 'package:flutter/cupertino.dart';
@@ -17,7 +18,10 @@ class ProductsScreen extends StatelessWidget {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
         backgroundColor: purpleColor,
-        onPressed: (){}, child: const Icon(Icons.add),),
+        onPressed: (){
+          Get.to(()=> const AddProduct());
+        }, 
+        child: const Icon(Icons.add),),
       appBar: appbarWidget(products),
       body: Padding(
         padding: const EdgeInsets.all(8.0),

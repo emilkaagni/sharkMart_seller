@@ -16,7 +16,7 @@ class ProductDetails extends StatelessWidget {
           onPressed: (){
             Get.back();
           },
-          icon: Icon(Icons.arrow_back, color: darkGrey),
+          icon: const Icon(Icons.arrow_back, color: darkGrey),
         ),
         title: boldText(text: "Product title", color: fontGrey, size: 16.0),
       ),
