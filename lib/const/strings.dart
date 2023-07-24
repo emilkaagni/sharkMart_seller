@@ -26,16 +26,17 @@ const appname = "Shark Market Seller App",
     edit = "Edit",
     confirmPass = "Confirm Password",
     remove = "Remove",
+    chat = "Chats",
     name = "Username",
     credit = "@Emilkaagni";
 
 //shop settings strings
 
-const nameHint = "eg. Vendor",
+const nameHint = "eg. Shark",
     shopDescHint = "Enter your shop description",
-    shopWebsiteHint = "eg. vendor.emart.com",
+    shopWebsiteHint = "eg. sharkMarket.com",
     shopMobileHint = "eg. +0123456789",
-    shopAddressHint = "eg. Near Railway Bazaar",
+    shopAddressHint = "eg. New Basneshwor",
     description = "Description",
     mobile = "Shop mobile",
     website = "Shop Website",

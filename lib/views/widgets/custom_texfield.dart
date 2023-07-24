@@ -3,8 +3,9 @@ import 'package:Indi_seller/views/widgets/text_style.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-Widget customTextField({label, hint, controller}){
+Widget customTextField({label, hint, controller, isDesc = false}){
   return TextFormField(
+    maxLines: isDesc ? 4:1,
     decoration: InputDecoration(
       isDense: true,
       label: normalText(text: label),
