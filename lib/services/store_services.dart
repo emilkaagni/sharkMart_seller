@@ -14,5 +14,4 @@ class StoreServices{
     return firestore.collection(productsCollection).where('vendor_id', arrayContains: uid).snapshots();
 
   }
-
 }
