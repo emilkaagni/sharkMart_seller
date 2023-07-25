@@ -12,6 +12,9 @@ class AddProduct extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+
+
     return Scaffold(
       backgroundColor: purpleColor,
       appBar: AppBar(

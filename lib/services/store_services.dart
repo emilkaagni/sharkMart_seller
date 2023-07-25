@@ -10,5 +10,9 @@ class StoreServices{
   static getOrders(uid){
     return firestore.collection(ordersCollection).where('vendors', arrayContains: uid).snapshots();
   }
+  static getProducts(uid){
+    return firestore.collection(productsCollection).where('vendor_id', arrayContains: uid).snapshots();
+
+  }
 
 }
