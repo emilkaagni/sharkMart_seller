@@ -30,7 +30,9 @@ class ProfileScreen extends StatelessWidget {
         title: boldText(text: settings, size: 16.0),
         actions: [
           IconButton(onPressed: (){
-            Get.to(()=>const EditProfileScreen());
+            Get.to(()=> EditProfileScreen(
+              username: controller.snapshotData['vendor_name'],
+            ));
           }, icon:const Icon(Icons.edit)),
           TextButton(
               onPressed: () async{
@@ -54,7 +56,12 @@ class ProfileScreen extends StatelessWidget {
                 child: Column(
                   children: [
                     ListTile(
-                      leading: Image.asset(imgProduct).box.roundedFull.clip(Clip.antiAlias).make(),
+                      leading: controller.snapshotData['imageUrl']==''
+                          ? Image.asset(imgProduct, width: 100, fit: BoxFit.cover).box.roundedFull.clip(Clip.antiAlias).make()
+                      : Image.network(controller.snapshotData['imageUrl'], width: 100).box.roundedFull.clip(Clip.antiAlias).make(),
+
+
+                      // leading: Image.asset(imgProduct).box.roundedFull.clip(Clip.antiAlias).make(),
                       title: boldText(text: "${controller.snapshotData['vendor_name']}"),
                       subtitle: normalText(text: "${controller.snapshotData['email']}"),
                     ),

@@ -5,6 +5,8 @@ import 'package:flutter/material.dart';
 
 Widget customTextField({label, hint, controller, isDesc = false}){
   return TextFormField(
+    style: const TextStyle(color: white),
+    controller: controller,
     maxLines: isDesc ? 4:1,
     decoration: InputDecoration(
       isDense: true,

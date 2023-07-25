@@ -41,7 +41,7 @@ class ProfileController extends GetxController{
   updateProfile({name,password,imgUrl}) async{
     var store = firestore.collection(vendorsCollection).doc(currentUser!.uid);
     await store.set({
-      'name':name,
+      'vendor_name':name,
       'password':password,
       'imageUrl':imgUrl},SetOptions(merge: true));
     isloading(false);
