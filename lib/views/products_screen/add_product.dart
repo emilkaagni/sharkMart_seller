@@ -50,7 +50,7 @@ class AddProduct extends StatelessWidget {
                 10.heightBox,
                 customTextField(hint: "eg. Oversize t-shirt", label: "Description", isDesc: true, controller: controller.pdescController),
                 10.heightBox,
-                customTextField(hint: "eg. \100", label: "Price", controller: controller.ppriceController),
+                customTextField(hint: "eg. 100", label: "Price", controller: controller.ppriceController),
                 10.heightBox,
                 customTextField(hint: "eg. 20", label: "Quantity",controller: controller.pquantitycontroller),
                 10.heightBox,
